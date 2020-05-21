@@ -10,9 +10,12 @@ namespace EncryptionFunnyStuff
         {
             Console.WriteLine("Choose a password:");
             var password = Console.ReadLine();
+            var aesUtils = new AESUtils(password);
 
-            var aesUtils = new AESUtils();
-            Console.WriteLine(aesUtils.Encrypt("Hello World!", password));
+            var helloworldEncypted = aesUtils.Encrypt("Hello World!");
+            Console.WriteLine(helloworldEncypted);
+
+            Console.WriteLine($"That was {aesUtils.Decrypt(helloworldEncypted)} but encrypted! Hahaha!");
         }
     }
 }
