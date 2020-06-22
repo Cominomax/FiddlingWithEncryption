@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption.App", "EncryptionFunnyStuff\Encryption.App.csproj", "{6CE874CE-14F6-4D4B-9F45-ECD37C534DFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption.App", "Encryption.App\Encryption.App.csproj", "{6CE874CE-14F6-4D4B-9F45-ECD37C534DFA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption.Lib", "Security\Encryption.Lib.csproj", "{D5C2EF72-EBF9-4BAF-9E00-AE784776030D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption.Lib", "Encryption.Lib\Encryption.Lib.csproj", "{D5C2EF72-EBF9-4BAF-9E00-AE784776030D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities.Lib", "Entities.Lib\Entities.Lib.csproj", "{C7BB3A77-2887-465A-9532-FBC5D565BE96}"
 EndProject
