@@ -2,7 +2,7 @@
 {
     public interface ISymEncryptionAlgorithm
     {
-        string Encrypt(string plainText);
-        string Decrypt(string encryptedText);
+        string Encrypt(string secret);
+        string Decrypt(string secret);
     }
 }

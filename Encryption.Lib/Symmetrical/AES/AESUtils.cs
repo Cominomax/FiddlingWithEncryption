@@ -14,16 +14,16 @@ namespace Encryption.Lib.Symmetrical.AES
             _aes = aes;
         }
        
-        public string Encrypt(string plainText)
+        public string Encrypt(string secret)
         {
-            byte[] plainBytes = Encoding.Unicode.GetBytes(plainText);
+            byte[] plainBytes = Encoding.Unicode.GetBytes(secret);
             byte[] encryptedBytes = Transform(plainBytes, _aes.CreateEncryptor);
             return Convert.ToBase64String(encryptedBytes);
         }
 
-        public string Decrypt(string encryptedText)
+        public string Decrypt(string secret)
         {
-            byte[] encryptedBytes = Convert.FromBase64String(encryptedText);
+            byte[] encryptedBytes = Convert.FromBase64String(secret);
             byte[] plainBytes = Transform(encryptedBytes, _aes.CreateDecryptor);
             return Encoding.Unicode.GetString(plainBytes);
         }

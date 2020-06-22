@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Encryption.Lib\Encryption.Lib.csproj" />
+    <ProjectReference Include="..\Entities.Lib\Entities.Lib.csproj" />
   </ItemGroup>
 
 </Project>
